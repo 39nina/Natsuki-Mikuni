@@ -119,7 +119,7 @@ header {
 .page-title p {
     font-size: 19px;
     margin-bottom: 16px;
-    font-weight: 270;
+    font-weight: 300;
     letter-spacing: 0.05em;
 }
 
@@ -154,7 +154,7 @@ header {
 
 .sns1,.main-container,.main-container img {
     max-width: 800px;
-    font-weight: 250;
+    font-weight: 300;
     margin: 0 auto;
 }
 
@@ -288,7 +288,7 @@ h2 {
     text-align: center;
     text-decoration: none;
     display: flex;
-    width: 300px；
+    width: 300px;
 }
 
 .topic {
@@ -311,7 +311,7 @@ h2 {
 
 .company-info {
     max-width: 1000px;
-    font-weight: 250;
+    font-weight: 300;
     margin: 0 auto;
 }
 
@@ -319,7 +319,7 @@ h3 {
     margin: 125px 0 0 0;
     padding: 24px 0 30px 0;
     font-size:20px;
-    font-weight: 450;
+    font-weight: 500;
     border-top: black 2px solid;
     border-bottom: black 0.5px dotted;
 }
@@ -331,7 +331,7 @@ h3 {
 
 .info-heading {
     font-size: 16px;
-    font-weight: 420;
+    font-weight: 400;
     margin: 7px 0 25px 0;
 }
 
@@ -404,7 +404,7 @@ span {
 .footer-container {
     display: flex;
     box-sizing: border-box;
-    font-weight: 260;
+    font-weight: 300;
     max-width: 1270px;
     margin: 0 auto;
     margin-bottom: 58px;
@@ -479,5 +479,5 @@ span {
 
 .copyright {
     font-size: 10px;
-    font-weight: 250;
+    font-weight: 200;
 }
