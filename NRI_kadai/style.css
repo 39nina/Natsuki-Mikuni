@@ -1,0 +1,483 @@
+@charset "utf-8";
+
+/* 初期設定のキャンセル */
+
+html, body, div, span, h1, h2, h3, img, header, main, footer, ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Noto Sans JP',sans-serif;
+}
+
+
+/* ヘッダー */
+
+header {
+}
+
+.header-container {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 56px;
+    z-index: 10;
+}
+
+.header-container div:first-child {
+    margin-right: auto;
+}
+
+.header-logo {
+    height: 29px;
+    padding-left: 36px;
+}
+
+.header-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-title img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    font-weight: 500;
+}
+
+.navbar li:hover {
+    border-bottom: rgba(6, 17, 119) 2px solid;
+    transition: all 0.1s;
+}
+
+.navbar a:hover {
+    color: rgb(33, 46, 158);
+    transition: all 0.1s;
+}
+
+.navbar li a {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: black;
+    padding: 2px 7px;
+}
+
+.btn img {
+    height: 20px;
+    padding: 20px 17px;
+}
+
+.btn img:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs {
+    padding: 60px 0 25px 56px;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    list-style-type: none;
+}
+
+.breadcrumbs li a, li {
+    text-decoration: none;
+    color: rgb(184, 182, 182);
+    font-size: 12px;
+}
+
+
+/* メイン（上部画像） */
+
+.page-title img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.page-title {
+    position: relative;
+}
+
+.page-title div {
+    position: absolute;
+    color:white;
+    top: 42px;
+    left: 192px;
+}
+
+.page-title p {
+    font-size: 19px;
+    margin-bottom: 16px;
+    font-weight: 270;
+    letter-spacing: 0.05em;
+}
+
+.page-title h1 {
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.sns1 {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 28px;
+}
+
+.sns1 p, .sns1 img {
+    padding-left: 22px;
+    width: 24px;
+    height: 24px;
+}
+
+.sns1 p {
+    font-size: 10.5px;
+    display: flex;
+    align-items: center;
+    width: 35px;
+    font-weight: 600;
+    color: rgb(82, 82, 82);
+    margin: 0;
+    padding-left: 0;
+}
+
+.sns1,.main-container,.main-container img {
+    max-width: 800px;
+    font-weight: 250;
+    margin: 0 auto;
+}
+
+
+/* メイン（コンテンツ本文） */
+
+.main-container {
+    margin-top: 49px;
+}
+
+.main-heading img {
+    height: 21px;
+    width: 21px;
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 600;
+    display: inline;
+    vertical-align: middle;
+    letter-spacing: 0.02em;
+}
+
+.main-heading {
+    margin-bottom: 28px;
+}
+
+.main-detail p {
+    line-height: 1.935em;
+    margin-bottom: 1em;
+}
+
+.main-image {
+    padding: 11px 0 34px 0;
+}
+
+.pdf p {
+    color: white;
+    margin:1.0em 0;
+    line-height: 1.2em;    
+}
+
+.pdf a {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 88, 168);
+    width: 295px;
+    align-items: center;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+
+.pdf a:hover {
+    background-color: rgb(35, 88, 168,0.8);
+}
+
+.mark {
+    color: rgba(158, 152, 152);
+    font-size: 0.7em;
+    padding-right: 3px;
+}
+
+.file::after {
+    content: url(NRI_images/icon-pdf.png);
+}
+
+/* メイン（前後ページリンク） */
+
+.next-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin: 87px 0 37px 0;
+}
+
+.next-page a, .str-inner a {
+    text-decoration: none;
+    color: rgba(6, 17, 119, 0.8);
+    font-weight: 300;
+}
+
+.next-page a:hover {
+    text-decoration: underline;
+}
+
+.strength {
+    background-color: rgb(217, 239, 252);
+    padding:20px 20px 27px 20px;
+    margin-bottom: 34px;
+}
+
+.strength-container {
+    display: inline-block;
+}
+
+.strength-container div {
+    background-color: white;
+    border: rgb(204, 201, 201) 1px solid;
+    margin-top: 0.8em;
+}
+
+.str-heading {
+    font-weight: 500;
+}
+
+.str-header {
+    font-weight: 500;
+    margin: 6px 0 0 0;
+}
+
+.str-inner {
+    margin: 5px 16px 0 0;
+    padding:10px;
+    transition: all 0.3s;
+}
+
+.str-inner a, p {
+    margin:0.5em 0;
+    line-height: 1.2em;
+    box-sizing: border-box;
+}
+
+.str-container {
+    width: 33%;
+}
+
+.str-inner a {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    width: 300px；
+}
+
+.topic {
+    width: 100%;
+}
+
+.mark2 {
+    color: rgba(158, 152, 152);
+    font-size: 0.7em;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.str-inner:hover {
+    background-color: rgba(239, 239, 240, 0.7);
+}
+
+/* 企業情報 */
+
+.company-info {
+    max-width: 1000px;
+    font-weight: 250;
+    margin: 0 auto;
+}
+
+h3 {
+    margin: 125px 0 0 0;
+    padding: 24px 0 30px 0;
+    font-size:20px;
+    font-weight: 450;
+    border-top: black 2px solid;
+    border-bottom: black 0.5px dotted;
+}
+
+.company-info-container {
+    padding: 30px 0 8px 0;
+    border-bottom: black 0.5px dotted;
+}
+
+.info-heading {
+    font-size: 16px;
+    font-weight: 420;
+    margin: 7px 0 25px 0;
+}
+
+.info-inner {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.info-inner li {
+    list-style-type: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.info-inner a, .return-page a {
+    text-decoration: none;
+    color: rgba(10, 25, 110, 0.8);
+}
+
+.info-inner a:hover, .return-page a:hover {
+    text-decoration: underline;
+}
+
+span {
+    color: rgb(134, 134, 134);
+    font-size: 9px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.info-inner ul {
+    width: 25%;
+}
+
+.return-page {
+    margin: 68px 0 93px 0;
+}
+
+.sns2 {
+    border-top: rgb(136, 135, 135) 2px solid;
+    border-bottom: rgb(136, 135, 135) 2px solid;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 30px 0;
+    margin-bottom: 46px;
+}
+
+.sns2 p, .sns2 img {
+    padding-left: 40px;
+    width: 28px;
+    height: 28px;
+}
+
+.sns2 p {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    font-weight: 600;
+    color: rgb(82, 82, 82);
+    margin: 0;
+    padding-left: 0;
+    text-align: right;
+}
+
+
+/* フッター */
+
+.footer-container {
+    display: flex;
+    box-sizing: border-box;
+    font-weight: 260;
+    max-width: 1270px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.footer-container li {
+    list-style-type: none;
+}
+
+.footer-container li:hover {
+    text-decoration: underline;
+}
+
+.footer-heading {
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+
+.footer-heading a {
+    font-size: 17px;
+}
+
+.footer-container ul {
+    width: 25%;
+    line-height: 37px;
+}
+
+/* フッター（コピーライト部分） */
+
+.footer-end-container {
+    border-top: 1px solid rgb(202, 201, 201);
+    padding: 72px 0 108px 0;
+}
+
+.footer-end {
+    padding-bottom: 18px ;
+}
+
+.footer-end, .copyright {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-end ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-end li::after {
+    content: "　｜　";
+    color: gray;
+}
+
+.footer-end li:last-child::after {
+    content: none;
+}
+
+.footer-end a {
+    text-decoration: none;
+    color: rgb(165, 164, 164);
+}
+
+.footer-end a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 10px;
+    font-weight: 250;
+}
