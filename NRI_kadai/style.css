@@ -51,7 +51,8 @@ header {
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: -0.055em;
 }
 
 .navbar li:hover {
@@ -70,6 +71,11 @@ header {
     font-size: 14px;
     color: black;
     padding: 2px 7px;
+}
+
+.btn {
+    margin-left: 13px;
+    margin-right: 7px;
 }
 
 .btn img {
@@ -186,6 +192,7 @@ h2 {
 .main-detail p {
     line-height: 1.935em;
     margin-bottom: 1em;
+    font-weight: 200;
 }
 
 .main-image {
@@ -195,7 +202,8 @@ h2 {
 .pdf p {
     color: white;
     margin:1.0em 0;
-    line-height: 1.2em;    
+    line-height: 1.2em;
+    font-weight: 200;
 }
 
 .pdf a {
@@ -220,8 +228,12 @@ h2 {
     padding-right: 3px;
 }
 
-.file::after {
-    content: url(NRI_images/icon-pdf.png);
+.pdf-icon {
+    position: absolute;
+}
+
+.pdf-icon img {
+    transform: translate(320%, 65%);
 }
 
 /* メイン（前後ページリンク） */
@@ -249,14 +261,28 @@ h2 {
     margin-bottom: 34px;
 }
 
-.strength-container {
-    display: inline-block;
+.str {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
 }
 
-.strength-container div {
+.strength-container1,.strength-container2 {
+    width: 34%;
+}
+
+.strength-container3 {
+    width: 32%;
+}
+
+.strength-container1 div, .strength-container2 div, .strength-container3 div {
     background-color: white;
     border: rgb(204, 201, 201) 1px solid;
     margin-top: 0.8em;
+}
+
+.strength-container1, .strength-container2 div {
+    margin-right: 18px;
 }
 
 .str-heading {
@@ -269,9 +295,10 @@ h2 {
 }
 
 .str-inner {
-    margin: 5px 16px 0 0;
+    margin: 5px 0px 0 0;
     padding:10px;
     transition: all 0.3s;
+    height: 48px;
 }
 
 .str-inner a, p {
@@ -280,15 +307,10 @@ h2 {
     box-sizing: border-box;
 }
 
-.str-container {
-    width: 33%;
-}
-
 .str-inner a {
     text-align: center;
     text-decoration: none;
     display: flex;
-    width: 300px;
 }
 
 .topic {
@@ -404,7 +426,7 @@ span {
 .footer-container {
     display: flex;
     box-sizing: border-box;
-    font-weight: 300;
+    font-weight: 200;
     max-width: 1270px;
     margin: 0 auto;
     margin-bottom: 58px;
@@ -430,7 +452,7 @@ span {
 }
 
 .footer-heading a {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .footer-container ul {
@@ -441,7 +463,7 @@ span {
 /* フッター（コピーライト部分） */
 
 .footer-end-container {
-    border-top: 1px solid rgb(202, 201, 201);
+    border-top: 1px solid rgb(187, 186, 186);
     padding: 72px 0 108px 0;
 }
 
@@ -457,6 +479,7 @@ span {
 .footer-end ul {
     display: flex;
     list-style-type: none;
+    font-weight: 300;
 }
 
 .footer-end li::after {
@@ -478,6 +501,6 @@ span {
 }
 
 .copyright {
-    font-size: 10px;
-    font-weight: 200;
+    font-size: 9px;
+    font-weight: 300;
 }
