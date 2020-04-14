@@ -11,28 +11,26 @@
     <header>
         <nav>
             <img class="header-logo" src="Kaguya_images/logo_header/logo_header.png" srcset="Kaguya_images/logo_header/logo_header.png 1x,
-                                                                                             Kaguya_images/logo_header/logo_header@2x.png 2x" alt="">
+                                                                                             Kaguya_images/logo_header/logo_header@2x.png 2x" alt="HTML CSS">
             <ul class="header-nav">
-                <li><a href="Kaguya_kadai/home.html">HOME</a></li>
-                <li><a href="Kaguya_kadai/news.html">NEWS</a></li>
-                <li><a href="Kaguya_kadai/recruit.html">RECRUIT</a></li>
-                <li><a href="Kaguya_kadai/contact.html">CONTACT</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
-        <div>
-            <img class="home-image" src="Kaguya_images/home_top/home_top.png" srcset="Kaguya_images/home_top/home_top.png 1x,
-            Kaguya_images/home_top/home_top@2x.png 2x" alt="">
-            <p>We</p>
-            <p>propose</p>
-            <p>a life.</p>
-        </div>
     </header>
     <main>
+        <div>
+            <img class="home-image" src="Kaguya_images/home_top/home_top.png" srcset="Kaguya_images/home_top/home_top.png 1x,
+                                                                                      Kaguya_images/home_top/home_top@2x.png 2x" alt="リビングイメージ">
+            <h1>We propose a life.</h1>
+        </div>
         <div class="concept">
             <img src="Kaguya_images/concept/concept.png" srcset="Kaguya_images/concept/concept.png 1x,
-                                                                 Kaguya_images/concept/concept@2x.png 2x" alt="">
+                                                                 Kaguya_images/concept/concept@2x.png 2x" alt="コンセプト">
             <div>
-                <p>暮らしを提案する。</p>
+                <h2>暮らしを提案する。</h2>
                 <p>
                     私たちは、家具を売るのではなく、お客様の理想とする<br>
                    「暮らし」を提案します。<br>
@@ -43,7 +41,7 @@
             </div>
         </div>
         <section>
-            <h1>NEWS</h1>
+            <h3>NEWS</h3>
             <div class="item-image">
                 <img src="Kaguya_images/news01/news01.png" srcset="Kaguya_images/news01/news01.png 1x,
                                                                    Kaguya_images/news01/news01@2x.png 2x" alt="">
@@ -59,46 +57,42 @@
                                                                    Kaguya_images/news03/news03@2x.png 2x" alt="">
                 <p class="item-comment">アームストロングのテーブル入荷</p>
             </div>
-            <p class="viewmore">view more <span>&gt;</span></p>
+            <p class="viewmore"><a href="news.html" class="link_news">view more</a></p>
         </section>
         <section>
-            <h1>公式カタログ</h1>
+            <h3>公式カタログ</h3>
             <div>
                 <p>様々なスタイルをご提案いたします。オーダーメイドも可能です。</p>
                 <p>詳しくはカタログをご覧ください。</p>
             </div>
-            <div class="dl-btn">
-                <p>カタログをダウンロード</p>
-            </div>
+            <button>カタログをダウンロード</button>
         </section>
-        <section>
-            <h1>CONTACT</h1>
-            <div>
-                <input type="text" value="お名前">
-                <input type="email" value="メールアドレス">
-                <textarea>お問い合わせ内容</textarea>
+        <form action="#">
+            <h3>CONTACT</h3>
+                <input type="text" placeholder="お名前">
+                <input type="email" placeholder="メールアドレス">
+                <textarea placeholder="お問い合わせ内容"></textarea>
                 <input type="submit" value="SEND">
-            </div>
-        </section>
+        </form>
         <section>
-            <h1>RECRUIT</h1>
+            <h3>RECRUIT</h3>
             <p>現在スタッフを募集しております。</p>
             <p>詳しくは詳細ページをご覧ください。</p>
-            <p class="viewmore">view more <span>&gt;</span></p>
+            <p class="viewmore"><a href="recruit.html" class="link_recruit">view more</a></p>
         </section>
     </main>
     <footer>
         <div>
             <img class="footer-logo" src="Kaguya_images/logo_footer/logo_footer.png" srcset="Kaguya_images/logo_footer/logo_footer.png 1x,
-                                                                                             Kaguya_images/logo_footer/logo_footer@2x.png 2x" alt="">
+                                                                                             Kaguya_images/logo_footer/logo_footer@2x.png 2x" alt="HTML CSS">
             <ul class="footer-nav">
-                <li><a href="Kaguya_kadai/home.html">HOME</a></li>
-                <li><a href="Kaguya_kadai/news.html">NEWS</a></li>
-                <li><a href="Kaguya_kadai/recruit.html">RECRUIT</a></li>
-                <li><a href="Kaguya_kadai/contact.html">CONTACT</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
-        <p class="copyright">©HTMLCSS.code</p>
+        <small>&copy;HTMLCSS.code</small>
     </footer>
 </body>
 </html>
