@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/* 初期設定のリセット */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 全体設定 */
+
+body {
+  font-family: "Noto Sans", "Regular";
+}
+
+/* ヘッダー */
+
+header {
+  height: 56px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+nav:first-child {
+  margin-right: auto;
+}
+
+.header-logo {
+  height: 24px;
+  margin: 16px 0 16px 96px
+}
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.header-nav li {
+  margin: 26px 0 8px 56px;
+  letter-spacing: 0px;
+}
+
+.header-nav li:last-child {
+  margin-right: 96px;
+}
+
+.header-nav a {
+  text-decoration: none;
+}
+
+.active {
+  color: #3B3B3B;
+}
+
+.non-active {
+  color: #B2B2B2;
+}
+
+/* メイン（上部イメージ） */
+
+.contact-image {
+  width: 100%;
+}
+
+h1 {
+  position: absolute;
+  top: 270px;
+  left: 260px;
+  font-size: 35px;
+  color: #FCFCFC;
+  letter-spacing: 3px;
+}
+
+/* コンタクト */
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 2.5px;
+  margin-bottom: 40px;
+}
+
+h2,input,textarea {
+  color: #3B3B3B;
+}
+
+form {
+  margin-top: 240px;
+  text-align: center;
+}
+
+form p {
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  margin-bottom: 72px;
+}
+
+input, textarea {
+  display: block;
+  color: rgb(59,59,59,0.4);
+  width: 454px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 12px;
+  border-radius: 16px;
+  border: 1px solid rgb(59,59,59,0.4);
+  padding: 10px 16px;
+  letter-spacing: 0.6px;
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+  font-family: "Noto Sans", "Regular";
+}
+
+.send-btn {
+  color: #707070;
+  background-color: #D1D1D1;
+  border: none;
+  border-radius: 16px;
+  width: 161px;
+  height: 32px;
+  letter-spacing: 1.4px;
+}
+
+/* フッター */
+
+footer {
+  margin-top: 320px;
+  background-color: #918F89;
+  position: relative;
+  height: 240px;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer img {
+  height: 40px;
+  position: absolute;
+  top: 120px;
+  left: 224px;
+}
+
+.footer-nav {
+  position: absolute;
+  top: 120px;
+  right: 224px;
+  display: flex;
+}
+
+.footer-nav li {
+  margin-left: 32px;
+}
+
+.footer-nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+small {
+  color: #FFFFFF;
+  font-size: 11px;
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  letter-spacing: 0.44px;
+}

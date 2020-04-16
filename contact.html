@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML CSS.code homepage - contact</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-contact.css">
 </head>
 <body>
     <header>
@@ -13,10 +13,10 @@
             <img class="header-logo" src="Kaguya_images/logo_header/logo_header.png" srcset="Kaguya_images/logo_header/logo_header.png 1x,
                                                                                              Kaguya_images/logo_header/logo_header@2x.png 2x" alt="HTML CSS">
             <ul class="header-nav">
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="news.html">NEWS</a></li>
-                <li><a href="recruit.html">RECRUIT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a class="non-active" href="home.html">HOME</a></li>
+                <li><a class="non-active" href="news.html">NEWS</a></li>
+                <li><a class="non-active" href="recruit.html">RECRUIT</a></li>
+                <li><a class="active" href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +32,7 @@
                 <input type="text" placeholder="お名前">
                 <input type="email" placeholder="メールアドレス">
                 <textarea placeholder="お問い合わせ内容"></textarea>
-                <input type="submit" value="SEND">
+                <input type="submit" value="SEND" class="send-btn">
         </form>
     </main>
     <footer>
