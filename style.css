@@ -128,13 +128,14 @@ h1 {
 /* メイン（コンセプト） */
 
 .concept {
-  margin-top: 80px;
+  margin: 80px 120px 0 0px;
   display: flex;
   justify-content: center;
 }
 
-.concept img {
-  margin-left: 88px;
+.concept-wrapper {
+   width: 100%;
+   margin: 0 auto;
 }
 
 .concept div {
@@ -169,6 +170,7 @@ h3 {
 .arrival-info {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .item-image {
