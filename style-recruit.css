@@ -173,6 +173,10 @@ td {
   content: "・";
 }
 
+span {
+  font-family: "Noto Sans";
+}
+
 /* フッター */
 
 footer {
