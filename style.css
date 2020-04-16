@@ -54,7 +54,7 @@ table {
 /* 全体設定 */
 
 body {
-  font-family: "Noto Sans", Regular;
+  font-family: "Noto Sans","Regular";
 }
 
 /* ヘッダー */
@@ -264,6 +264,7 @@ input, textarea {
 textarea {
   height: 200px;
   resize: none;
+  font-family: "Noto Sans","Regular";
 }
 
 .send-btn {
