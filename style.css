@@ -196,8 +196,8 @@ nav:first-child {
   /* ▽▽メニューボタン▽▽ */
   .hm_btn {
     position: relative;
-    top:12px;
-    right: 15px;
+    top:14px;
+    right: 20px;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -210,12 +210,11 @@ nav:first-child {
     box-shadow: #fff 0 12px 0;
   }
   .hm_btn::after {
-    bottom: 0;
+    bottom: 4px;
   }
-  .hm_btn::before,
-  .hm_btn::after {
-    width: 30px;
-    height: 6px;
+  .hm_btn::before,.hm_btn::after {
+    width: 38px;
+    height: 2px;
     background: #fff;
     display: block;
     content: '';
