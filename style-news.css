@@ -103,6 +103,208 @@ nav:first-child {
   color: #B2B2B2;
 }
 
+/* ＜携帯用メディアクエリ＞ヘッダー */
+@media(max-width: 375px) {
+  header {
+    background-color: #918F89;
+  }
+
+  .header-logo-rd {
+    display: block;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header li, header img {
+    display: none;
+  }
+
+  .hamburgermenu {
+    display: block;
+    width: 36px;
+    height: 32px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+  }
+
+  .home-image-rd {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ハンバーガーメニュー */
+
+@media(min-width: 376px) {
+  .hm_wrap {
+    display: none;
+  }
+}
+
+@media(max-width: 375px) {
+  header {
+    display: none;
+  }
+
+  .header-logo-rd {
+    z-index: 10;
+  }
+
+  .hm_menu_check {/* チェックボックスを隠す */
+    display: none;
+  }
+
+  .hm_wrap {
+    display: inline-block;
+    position :fixed;
+    top :0;
+    left :0;
+    width :100%;
+    height: 56px;
+    background :rgb(145,143,137);
+    z-index: 8;
+  }
+   
+  .hm_title {/* ハンバーガーメニューオープン時の見出し */
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-weight: 100;
+    line-height: 30px;
+    margin: 0 0 0 15px;
+    opacity: 0;
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+    -webkit-transition: -webkit-transform 0.6s, opacity 0.5s;
+    transition: transform 0.6s, opacity 0.5s;
+    z-index: 2;
+  }
+   
+  /* ▽▽メニューボタン▽▽ */
+  .hm_btn {
+    position: relative;
+    top:14px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    z-index: 10;
+  }
+  .hm_btn::before {
+    -webkit-box-shadow: #fff 0 12px 0;
+    box-shadow: #fff 0 12px 0;
+  }
+  .hm_btn::after {
+    bottom: 4px;
+  }
+  .hm_btn::before,.hm_btn::after {
+    width: 38px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    content: '';
+    position: absolute;
+    -webkit-transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s 0.2s;
+    transition: box-shadow 0.2s linear, transform 0.2s 0.2s;
+  }
+  /* △△メニューボタン△△ */
+   
+  .hm_menu_wrap {
+    width :100%;
+    height :10000px;
+    background :rgb(145,143,137,0.95);
+    position: absolute;
+    left: -100%;
+    top: 0;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+  }
+   
+  /* ▽▽開閉時のアニメーション▽▽ */
+  .hm_menu_check:checked ~ .hm_title {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .hm_menu_check:checked ~ .hm_btn::before {
+    -webkit-box-shadow: transparent 0 0 0;
+    box-shadow: transparent 0 0 0;
+    -webkit-transform: rotate(45deg) translate3d(6px, 11px, 0);
+    transform: rotate(45deg) translate3d(6px, 11px, 0);
+  }
+  .hm_menu_check:checked ~ .hm_btn::after {
+    -webkit-transform: rotate(-45deg) translate3d(6px, -11px, 0);
+    transform: rotate(-45deg) translate3d(6px, -11px, 0);
+  }
+  .hm_menu_check:checked ~ .hm_menu_wrap {
+    left: 0;
+  }
+   
+  /* △△開閉時のアニメーション△△ */
+   
+  /* ▽▽メニュー内のリストスタイル▽▽ */
+  .hm_list {
+    list-style-type: none;
+    margin: 56px 0 0;
+    padding: 0;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    height: 752px;
+  }
+
+  .hm_list li {
+    border-bottom: 1px solid rgb(255,255,255,0.4);
+  }
+
+  .home-btn {
+    border-top: 1px solid #fff;
+  }
+
+  .hm_list li a {
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    padding: 32px 0;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+  }
+  .hm_list li a::before {/* aタグマウスオーバー時の背景 */
+    background: rgb(255,255,255,0.4);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    -webkit-transition: bottom 0.3s;
+    transition: bottom 0.3s;
+    z-index: -1;
+  }
+   
+  .hm_list li a:hover::before {
+    bottom: 0;
+  }
+  .hm_list li a:hover::after {
+    opacity: 0.5;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+}
+
 /* メイン（上部イメージ） */
 
 .news-image {
@@ -118,6 +320,37 @@ h1 {
   opacity: 0.8;
   letter-spacing: 5px;
 }
+
+.news-image-rd {
+  display: none;
+}
+
+/* ＜携帯用メディアクエリ＞メイン（上部イメージ） */
+
+@media(max-width: 375px) {
+
+  .news-image {
+    display: none;
+  }
+
+  .news-image-rd {
+    display: block;
+  }
+
+  h1 {
+    position: absolute;
+    top: 256px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    font-size: 25px;
+    color: #3B3B3B;
+    letter-spacing: 2.5px;
+  }
+  
+}
+
 
 /* メイン（ニュース） */
 
@@ -160,6 +393,58 @@ h2 {
   font-size: 14px;
   width: 220px;
   text-align: center;
+}
+
+.arrival-info-rd {
+  display: none;
+}
+
+/* ＜携帯用メディアクエリ＞メイン（上部イメージ） */
+
+@media(max-width: 375px) {
+  .news {
+    margin: 160px 0 0 0;
+  }
+
+  h2 {
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    color: #3B3B3B;
+    margin-bottom: 32px;
+  }
+
+  .arrival-info {
+    display: none;
+  }
+
+  .arrival-info-rd {
+    display: block;
+  }
+
+  .item-image-rd {
+    margin: 0 auto 24px auto;
+    position: relative;
+    background-color: rgb(00,00,00);
+    width: 272px;
+    height: 272px;
+  }
+  
+  .item-image-rd img {
+    opacity: 0.5;
+    width: 272px;
+    height: 272px;
+  }
+  
+  .item-image-rd p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 220px;
+    text-align: center;
+  }
 }
 
 /* フッター */
@@ -207,4 +492,34 @@ small {
   bottom: 24px;
   transform: translateX(-50%);
   letter-spacing: 0.44px;
+}
+
+/* ＜携帯用メディアクエリ＞フッター */
+@media(max-width: 375px) {
+
+  footer {
+    margin-top: 256px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+  
+  .footer-logo-rd {
+    display: block;
+  }
+  
+  .footer-nav {
+    display: none;
+  }
+  
+  .footer img {
+    height: 32px;
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
 }
